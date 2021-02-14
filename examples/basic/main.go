@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/pytimer/mux-logrus"
+	"github.com/ducc/mux-logrus"
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
