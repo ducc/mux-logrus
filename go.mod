@@ -1,4 +1,4 @@
-module github.com/pytimer/mux-logrus
+module github.com/ducc/mux-logrus
 
 go 1.13
 
