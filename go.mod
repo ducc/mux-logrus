@@ -1,4 +1,4 @@
-module github.com/ducc/mux-logrus
+module github.com/ducc/muxlogrus
 
 go 1.13
 
