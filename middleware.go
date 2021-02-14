@@ -125,6 +125,8 @@ func (m *LoggingMiddleware) Middleware(next http.Handler) http.Handler {
 		latency := m.clock.Since(start)
 
 		entry.WithFields(logrus.Fields{
+			"request": r.RequestURI,
+			"method":  r.Method,
 			"status": lw.statusCode,
 			"took":   latency,
 		}).Info("completed handling request")
